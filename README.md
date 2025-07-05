@@ -1,70 +1,65 @@
-# Getting Started with Create React App
+Cosmic Chronicles - README
+1. Installation and Setup Instructions
+Follow the steps below to set up and run Cosmic Chronicles locally:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Frontend (React):
+1. Navigate to the frontend folder: cd frontend
+2. Install dependencies: npm install
+3. Run the development server: npm start
+4. Build production version: npm run build (used when integrating with Flask backend)
 
-## Available Scripts
+Backend (Flask):
+1. Navigate to the backend folder: cd backend
+2. Create and activate a virtual environment: python -m venv venv && source venv/bin/activate
+3. Install dependencies: pip install -r requirements.txt
+4. Ensure MySQL is running and database is created (e.g., cosmic_db)
+5. Add your NASA API key to instance/config.py: NASA_API_KEY = "your_api_key_here"
+6. Run Flask server: python app.py
+7. Visit: http://localhost:5000 or http://localhost:5001 depending on port
 
-In the project directory, you can run:
+Database:
+1. Create a MySQL database named: cosmic_db (or your configured name)
+2. Tables will be auto-generated with db.create_all() from app context.
 
-### `npm start`
+2. Website Functionality and Unique Features
+Cosmic Chronicles is a space-themed astronomical event calendar and exploration platform. Key features include:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- 🌌 Daily Astronomy History Events: View past space missions and historical events for today’s date.
+- 📸 NASA APOD Integration: View and store NASA's Astronomy Picture of the Day.
+- 🔖 Bookmark System: Save favorite events for quick access.
+- 📅 Calendar View: Select any date to explore space history on that day.
+- 🧠 Quiz Popups: Test your knowledge with date-based space quizzes.
+- 🌐 Multilingual Support: Toggle between English and Hindi.
+- 🌗 Light/Dark Theme Toggle: Seamlessly switch themes across the entire UI.
+- 🗺️ Timeline View: Visualize major space milestones in a scrollable timeline.
+- 🛰️ API-based and Real-Time Data Fetching.
+- 📱 Fully Responsive Design and Offline-ready PWA structure (optional).
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+3. Dependencies
+Frontend (React):
+- React.js
+- react-router-dom
+- axios
+- react-i18next
+- react-datepicker
+- Web Speech API (if using voice input)
+- Normal CSS or TailwindCSS (if extended)
 
-### `npm test`
+Backend (Flask):
+- Flask
+- Flask-CORS
+- Flask-SQLAlchemy
+- PyMySQL
+- Requests
+- APScheduler (for auto-fetching NASA data)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Database:
+- MySQL (with user access and database named cosmic_db)
 
-### `npm run build`
+Other Tools:
+- NASA APOD API (https://api.nasa.gov)
+- Git for version control
+- serve (optional for static build preview)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![image](https://github.com/user-attachments/assets/50fb9676-5a21-4d88-8b6d-8fe66864c391)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

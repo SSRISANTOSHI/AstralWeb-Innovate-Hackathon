@@ -1,0 +1,45 @@
+.home-container {
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #0d1117;
+  color: #ffffff;
+  min-height: 80vh;
+}
+
+.home-title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #ffd700;
+}
+
+.home-subtitle {
+  font-size: 18px;
+  color: #c9d1d9;
+  margin-bottom: 40px;
+}
+
+.history-card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 25px 30px;
+  border-radius: 12px;
+  max-width: 700px;
+  width: 100%;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+  text-align: left;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.history-card h3 {
+  margin-bottom: 10px;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.history-card p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #c9d1d9;
+}

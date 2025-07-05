@@ -1,0 +1,83 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--bg-color);
+  padding: 12px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-left h1 {
+  color: var(--title-color);
+  font-size: 22px;
+  font-weight: bold;
+  margin: 0;
+  letter-spacing: 0.5px;
+  text-shadow: 0 0 5px rgba(255, 215, 0, 0.5); /* Gold glow */
+}
+
+.navbar-center {
+  display: flex;
+  gap: 25px;
+}
+
+.navbar-center a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.navbar-center a:hover {
+  color: var(--link-color);
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.language-toggle,
+.mode-toggle {
+  padding: 6px 12px;
+  /*margin-left:16px;*/
+  margin-right:20px;
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  color: var(--text-color);
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+/* Responsive navbar */
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-center {
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 10px;
+  }
+
+  .navbar-right {
+    margin-top: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+}

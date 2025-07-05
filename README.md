@@ -60,5 +60,4 @@ Other Tools:
 - Git for version control
 - serve (optional for static build preview)
 
-![image](https://github.com/user-attachments/assets/50fb9676-5a21-4d88-8b6d-8fe66864c391)
 

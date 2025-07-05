@@ -15,7 +15,6 @@ Backend (Flask):
 4. Ensure MySQL is running and database is created (e.g., cosmic_db)
 5. Add your NASA API key to instance/config.py: NASA_API_KEY = "your_api_key_here"
 6. Run Flask server: python app.py
-7. Visit: http://localhost:5000 or http://localhost:5001 depending on port
 
 Database:
 1. Create a MySQL database named: cosmic_db (or your configured name)
